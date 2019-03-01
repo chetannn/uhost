@@ -1,0 +1,81 @@
+main {
+  padding-top: 1rem;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff5454;
+}
+
+.login-form {
+  padding: 1rem;
+}
+
+.login-form label {
+  font-weight: bold;
+}
+
+.login-form label,
+.login-form input,
+.login-form select {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* .login-form input[type="checkbox"] */
+.login-form input[id*="terms"],
+.login-form input[id*="terms"] + label {
+  display: inline-block;
+  width: auto;
+  vertical-align: bottom;
+}
+
+.login-form input:not([type="checkbox"]),
+.login-form select {
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  outline: none;
+  background: #d8f3df;
+  border-color: #2ddf5c;
+}
+
+.login-form input[type="checkbox"] {
+  border: 1px solid #ccc;
+  background: white;
+  width: 1rem;
+  height: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.login-form input[type="checkbox"]:checked {
+  background: #2ddf5c;
+  border: #0e4f1f;
+}
+
+.login-form input.invalid,
+.login-form select.invalid,
+.login-form :invalid {
+  border-color: red !important;
+  background: #faacac;
+}
+
+.login-form button[type="submit"] {
+  display: block;
+  margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .login-form {
+      margin: auto;
+      width: 25rem;
+  }
+}
